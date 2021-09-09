@@ -25,7 +25,10 @@ public class RopeCuttingProblem {
         System.out.println("enter length of division3");
         int division3 = sc.nextInt();
 
-        System.out.println("Maximum number of divisions we can do is : " + ropeCutting(ropeLength,division1,division2,division3));
+        if(ropeCutting(ropeLength,division1,division2,division3) == -1)
+            System.out.println("we cannot cut the rope with the given divisions");
+        else
+            System.out.println("Maximum number of divisions we can do is : " + ropeCutting(ropeLength,division1,division2,division3));
 
     }
 }
